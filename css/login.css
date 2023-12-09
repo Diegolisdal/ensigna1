@@ -1,0 +1,105 @@
+.loginForm{
+    display: none;
+    background-color: rgb(85, 85, 85);
+}
+
+.main{
+  /* background-color: black;   */
+   background-image: url(../img/fondo10.jpg); 
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   background-attachment: contain;
+   background-repeat: no-repeat;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding: auto;
+}
+#registroForm{
+    background-color:  rgb(94, 94, 94);
+    padding: 20px;
+    
+}
+.vw-50{
+  margin: auto;
+  margin-bottom: 10px;
+  width: 18rem;
+  
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+p{
+    font-size: 15px;
+    margin: 0;
+}
+.loginForm{
+  margin: auto;
+    background-color:rgb(85, 85, 85);
+    width: 290px;
+    border-radius: 10px;
+    
+}
+.form-signin{
+    background-color:rgb(85, 85, 85);
+    width: 290px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.btn{
+    margin: 0px 9px 10px 8px;
+}
+.btn-lg{
+    margin: 0px 70px 10px ;
+}
+
+/* COMIENZA RESPONSIVO */
+/*##################################################################*/
+/* telefonos moviles orientacion vertical */
+/*##################################################################*/
+
+@media only screen and (max-width: 600px) {
+    .nav{
+        font-size: 0.8rem;
+        text-align: center !important;
+    }
+    li {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        color: #000;
+        font-weight: 600;
+        padding: 100px;
+        margin: 0;
+    }
+}
+/*##################################################################*/
+/*  moviles horizontales o tablets */
+/*##################################################################*/
+
+@media only screen and (min-width: 600px) {
+h2 {
+    font-size: 0.8rem;
+}
+li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #000;
+    font-weight: 600;
+    padding: 100px;
+}
+}
+
+/*##################################################################*/
+/* notebooks */
+/*##################################################################*/
+@media only screen and (min-width: 1000px) {
+
+    li {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        color: #000;
+        font-weight: 600;
+        padding: 100px;
+    }
+}

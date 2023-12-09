@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSIGNA</title>
+    <link rel="stylesheet" href="./css/nayfooter.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3a6a7a1eda.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+
+        </header>
+        <main class="main" id="app">
+            
+            <h2>Tractores</h2>
+            <p>Bienvenido a la sección de tractores de ENSIGNA, donde la innovación se une a la potencia para
+                ofrecerte un rendimiento excepcional en tus operaciones agrícolas. Nuestros tractores están
+                diseñados para satisfacer las demandas más exigentes de la agricultura moderna, proporcionando la
+                potencia y versatilidad que necesitas en cada campo.</p>
+
+            <div class="tarjeta" v-for="tractor in tractores">
+                <div class="contenido">
+                    <h3>Caracteristicas principales</h3>
+                    <p>Modelo: {{tractor.modelo}}</p>
+                    <p>Motor: {{tractor.motor}}</p>
+                    <p>Potencia: {{tractor.potencia}}</p>
+                    <!-- <tr class="" v-for="tractor in tractores"> -->
+                  <!-- <td scope="row">{{tractor.id}}</td> -->
+                  <!-- <td>{{tractor.modelo}}</td> -->
+                  <!-- <td>{{tractor.modelo}}</td> -->
+                  <!-- <td>{{tractor.potencia}}</td> -->
+                  <!-- <td>{{tractor.precio}}</td> -->
+                  <!-- <td>{{tractor.stock}}</td>  -->
+                    
+                </div>
+                <div class="imagenes">
+                    <img :src="tractor.imagen" :alt="tractor.modelo">
+                </div>
+
+
+                <div id="btn">
+                    <a class="bts" href="./contacto.html" target="_blank">Consultar</a>
+
+
+                </div>
+
+            </div>
+
+
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <script src="./js/tractores.js"></script>
+</body>
+
+</html>
