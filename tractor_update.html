@@ -29,41 +29,43 @@
 
         </header>
         <main class="main">
-          <div class="container" id="app">
-            <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-              <h1>Editar Tractor </h1>
+          <div class="container pt-5" id="app">
+            <div class="row">
+            <form style="width: 800px; margin: 0 auto;" class="bg-warning bg-opacity-50  form-control p-5">
+              <h1 class="text-success">Editar Tractor </h1>
               
-              <div class="mb-3">
+              <div class="mb-3 mt-3">
                 <label for="id">ID</label><br>
-                <input type="number" name="id" id="id" disabled v-model="id">
+                <input class="form-control" type="number" name="id" id="id" disabled v-model="id">
               </div>
               <div class="mb-3">
                 <label for="nombre">Motor</label><br>
-                <input type="text" name="motot" id="motor" v-model="motor">
+                <input class="form-control" type="text" name="motot" id="motor" v-model="motor">
               </div>
               <div class="mb-3">
                 <label for="nombre">Modelo</label><br>
-                <input type="text" name="modelo" id="modelo" v-model="modelo">
+                <input class="form-control" type="text" name="modelo" id="modelo" v-model="modelo">
               </div>
               <div class="mb-3">
                 <label for="nombre">Potencia</label><br>
-                <input type="text" name="potencia" id="potencia" v-model="potencia">
+                <input class="form-control" type="text" name="potencia" id="potencia" v-model="potencia">
               </div>
               <div class="mb-3">
                 <label for="precio">Precio</label><br>
-                <input type="number" name="precio" id="precio" v-model="precio">
+                <input class="form-control" type="number" name="precio" id="precio" v-model="precio">
               </div>
               <div class="mb-3">
                 <label for="stock">Stock</label><br>
-                <input type="number" name="stock" id="stock" v-model="stock">
+                <input class="form-control" type="number" name="stock" id="stock" v-model="stock">
               </div>
               <div class="mb-3">
                 <label for="imagen">Imagen</label><br>
-                <input type="text" name="imagen" id="imagen" v-model="imagen"><br><br>
+                <input class="form-control" type="text" name="imagen" id="imagen" v-model="imagen"><br><br>
                 <img width="80" :src="imagen" alt="">
               </div>
               <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
             </form>
+          </div>
           </div> 
         </main>
         <footer class="footer">
